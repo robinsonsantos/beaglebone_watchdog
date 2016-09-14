@@ -1,0 +1,8 @@
+#!/usr/bin/env ash
+#
+
+systemctl stop watchdog.timer
+systemctl stop watchdog.service
+
+systemctl disable watchdog.timer
+systemctl disable watchdog.service

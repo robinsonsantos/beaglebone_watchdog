@@ -1,0 +1,11 @@
+[Unit]
+Description=Run watchdog.service every 30 seconds
+
+[Timer]
+
+OnBootSec=1min
+OnUnitActiveSec=30s
+Unit=watchdog.service
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Reset when occurs a fault
+
+[Service]
+Type=simple
+PIDFile=/var/run/watchdog/watchdog.pid
+WorkingDirectory=/usr/bin/
+ExecStart=/usr/bin/watchdog.py
+SyslogIdentifier=watchdog

@@ -1,0 +1,7 @@
+#!/usr/bin/env ash
+#
+
+systemctl daemon-reload
+
+systemctl enable watchdog.timer
+systemctl start watchdog.timer

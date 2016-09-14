@@ -1,0 +1,12 @@
+Package: watchdog
+Version: 1.0.0-r0.0
+Description: Watchdog
+Section: software
+Priority: optional
+Maintainer: Robinson D. S. Santos <robinsondssantos@gmail.com.br>
+Filename: watchdog_1.0.0-r0.0_armv7ahf-vfp-neon.ipk 
+License: MIT
+Architecture: armv7ahf-vfp-neon
+Homepage: N/A
+Source: N/A
+Depends: python, opkg
