@@ -12,6 +12,13 @@ class Watchdog(object):
         pass
     
     def notify(self, device, msg):
+        '''
+        /dev/watchdog is opened and will reboot unless the watchdog is pinged
+        within a certain time.
+        
+        :param device str: path of watchdog special device
+        :param msg str: string to send
+        '''         
         with open(device, 'w+') as file:
             file.write(msg)
             file.flush()
