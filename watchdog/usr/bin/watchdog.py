@@ -8,7 +8,7 @@ class Watchdog(object):
     DEVICE = '/dev/watchdog'
     # STOP = 'V' in bleaglebone black not works
     
-    def __init__(self,):
+    def __init__(self):
         pass
     
     def notify(self, device, msg):
